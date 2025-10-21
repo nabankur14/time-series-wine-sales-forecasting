@@ -119,10 +119,10 @@ Comprehensive <em>EDA</em>, <em>model evaluation</em>, and <em>business insight 
   │
   ├── Rose_Sales_Data.csv                         → Monthly Rose wine sales data
   ├── Sparkling_Sales_Data.csv                    → Monthly Sparkling wine sales data
-  ├── rose_wines.ipynb                 → Main Jupyter Notebook for rose dataset (EDA + Modeling)
-  ├── sparkling_wines.ipynb            → Main Jupyter Notebook for sparkling dataset (EDA + Modeling)  
-  ├── Rose_Data_Report.pdf       → Full analytical & business report for rose dataset
-  ├── Sparkling_Data_Report.pdf       → Full analytical & business report for sparkling dataset 
+  ├── rose_wines.ipynb                            → Main Jupyter Notebook for rose dataset (EDA + Modeling)
+  ├── sparkling_wines.ipynb                       → Main Jupyter Notebook for sparkling dataset (EDA + Modeling)  
+  ├── Rose_Data_Report.pdf                        → Full analytical & business report for rose dataset
+  ├── Sparkling_Data_Report.pdf                   → Full analytical & business report for sparkling dataset 
   └── README.md                                   → Project documentation (this file)
   </pre>
 </details>
