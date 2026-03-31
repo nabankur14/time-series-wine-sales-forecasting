@@ -115,18 +115,24 @@ The methodology strictly follows a professional data science lifecycle, tailored
 ## Skills
 
 **Technical:**
-*   **Programming & Tools:** Python, Jupyter Notebooks
-*   **Data Manipulation & Analysis:** pandas, numpy, exploratory-data-analysis, trend-analysis
-*   **Machine Learning & Statistics:** scikit-learn, statsmodels
-*   **Forecasting & Modeling:** time-series-forecasting, demand-forecasting, arima, sarimax, exponential-smoothing
-*   **Visualization:** matplotlib, seaborn
-*   **Business Applications:** inventory-optimization
+*   **Programming & Tools:** 
+    ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Jupyter Notebooks](https://img.shields.io/badge/Jupyter_Notebooks-F37626?style=flat&logo=jupyter&logoColor=white)
+*   **Data Manipulation & Analysis:** 
+    ![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white) ![numpy](https://img.shields.io/badge/numpy-013243?style=flat&logo=numpy&logoColor=white) ![exploratory-data-analysis](https://img.shields.io/badge/exploratory--data--analysis-4B8BBE?style=flat) ![trend-analysis](https://img.shields.io/badge/trend--analysis-4B8BBE?style=flat)
+*   **Machine Learning & Statistics:** 
+    ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white) ![statsmodels](https://img.shields.io/badge/statsmodels-F7931E?style=flat)
+*   **Forecasting & Modeling:** 
+    ![time-series-forecasting](https://img.shields.io/badge/time--series--forecasting-228B22?style=flat) ![demand-forecasting](https://img.shields.io/badge/demand--forecasting-228B22?style=flat) ![arima](https://img.shields.io/badge/arima-228B22?style=flat) ![sarimax](https://img.shields.io/badge/sarimax-228B22?style=flat) ![exponential-smoothing](https://img.shields.io/badge/exponential--smoothing-228B22?style=flat)
+*   **Visualization:** 
+    ![matplotlib](https://img.shields.io/badge/matplotlib-31A8FF?style=flat) ![seaborn](https://img.shields.io/badge/seaborn-31A8FF?style=flat)
+*   **Business Applications:** 
+    ![inventory-optimization](https://img.shields.io/badge/inventory--optimization-8A2BE2?style=flat)
 
 **Soft:**
-*   **Data Storytelling:** Translating complex technical output (e.g., RMSE, Model parameters) into clear, actionable business narratives.
-*   **Cross-Functional Communication:** Bridging the gap between the analytics lifecycle and non-technical stakeholders (Supply Chain Planners, Marketing Teams).
-*   **Strategic Business Acumen:** Aligning predictive modeling metrics with operational goals, minimizing holding costs, and maximizing promotional ROI.
-*   **Analytical Problem Solving:** Evaluating trade-offs between model complexity and interpretability (e.g., ARIMA vs. Holt-Winters) to deduce the highest-accuracy solution.
+*   ![Data Storytelling](https://img.shields.io/badge/Data_Storytelling-black?style=flat) Translating complex technical output (e.g., RMSE, Model parameters) into clear, actionable business narratives.
+*   ![Cross-Functional Communication](https://img.shields.io/badge/Cross--Functional_Communication-black?style=flat) Bridging the gap between the analytics lifecycle and non-technical stakeholders (Supply Chain Planners, Marketing Teams).
+*   ![Strategic Business Acumen](https://img.shields.io/badge/Strategic_Business_Acumen-black?style=flat) Aligning predictive modeling metrics with operational goals, minimizing holding costs, and maximizing promotional ROI.
+*   ![Analytical Problem Solving](https://img.shields.io/badge/Analytical_Problem_Solving-black?style=flat) Evaluating trade-offs between model complexity and interpretability (e.g., ARIMA vs. Holt-Winters) to deduce the highest-accuracy solution.
 
 ---
 
