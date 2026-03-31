@@ -4,15 +4,14 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## 🌟 Hero Section
-
-**Forecasting the future of wine sales to optimize inventory and marketing strategies for the 20th century.**
+> **A comprehensive time series forecasting project analyzing historical sales data to predict future demand for Rose and Sparkling wines at ABC Estate Wines.**
 
 This project leverages historical sales data from ABC Estate Wines to predict future demand for Rose and Sparkling wines. By applying advanced time series forecasting techniques (ARIMA, Holt-Winters), we provide actionable insights to drive data-informed decision-making.
 
+
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 - [Project Overview](#-project-overview)
 - [Business Problem](#-business-problem)
 - [Dataset](#-dataset)
@@ -20,45 +19,97 @@ This project leverages historical sales data from ABC Estate Wines to predict fu
 - [Key Results](#-key-results)
 - [Business Impact](#-business-impact)
 - [Repo Structure](#-repository-structure)
-- [How to Run](#-how-to-run)
 - [Author](#-author)
 
 ---
 
-## 🚀 Project Overview
-**What:** A comprehensive time series analysis and forecasting project for Rose and Sparkling wine sales.
-**Why:** To understand historical sales patterns and provide accurate future sales estimates, enabling better resource allocation and strategic planning.
+## Project Overview
 
-## 💼 Business Problem
-**Problem:** ABC Estate Wines faces uncertainty in future demand, leading to potential stockouts or overstocking issues.
-**Stakeholders:** Inventory Managers, Sales Directors, Marketing Team.
-**Decision Impact:** Accurate forecasts will directly influence production schedules, inventory costs, and targeted marketing campaigns.
+This project focuses on leveraging data analytics and advanced forecasting techniques to uncover hidden sales patterns, detect seasonal trends, and predict the future demand for distinct wine varieties (Rose and Sparkling). By thoroughly analyzing 20th-century historical sales data, this project develops predictive models that serve as a foundational tool for inventory planning, marketing optimization, and strategic decision-making.
 
-## 📊 Dataset
-**Source:** ABC Estate Wines Internal Historical Data.
-**Size:** Monthly sales data spanning the 20th century.
-**Key Features:** `YearMonth` (Time Index), `Rose` (Sales Volume), `Sparkling` (Sales Volume).
-**Data Types:** Time Series Data.
+👉 [Open the rose wine notebook to explore full analysis](notebooks/rose_wines.ipynb)
+👉 [Open the sparkling wine notebook to explore full analysis](notebooks/sparkling_wines.ipynb)
 
-## 🛠️ Methodology
-1.  **Data Cleaning**: Handled missing values, parsed dates, and set time-based indices.
-2.  **Exploratory Data Analysis (EDA)**: Decomposed series into Trend, Seasonality, and Residual components. Visualized sales distribution and monthly patterns.
-3.  **Model Building**:
-    *   **Rose Wine**: Applied ARIMA and Holt-Winters Exponential Smoothing.
-    *   **Sparkling Wine**: Investigated seasonality and trend components for appropriate model selection.
-4.  **Evaluation**: Models were evaluated using **RMSE** (Root Mean Squared Error) to ensure forecast accuracy.
+---
 
-## 📈 Key Results
-*   **Seasonality**: Both wine types exhibit strong seasonal patterns, likely driven by holidays and weather seasons.
-*   **Trend**: Identifying long-term growth or decline trends to adjust strategic focus.
-*   **Performance**: The selected models successfully capture the underlying patterns, providing reliable short-term forecasts.
+## Business Problem
 
-## 💡 Business Impact
-1.  **Inventory Optimization**: Align stock levels with seasonal peaks to reduce holding costs and lost sales.
-2.  **Marketing Timing**: Launch campaigns ahead of predicted high-demand periods.
-3.  **Production Planning**: Adjust production schedules based on long-term trend forecasts.
+**Real-World Context:** ABC Estate Wines has collected extensive historical sales records for different types of wines spanning from 1980 to 1995. While overall growth is steady, the varying seasonal peaks and periodic fluctuations between wine types make supply chain management and marketing resource allocation challenging.
 
-## 🧠 Skills
+**Stakeholders:** ABC Estate Wines Management, Supply Chain Planners, and the Marketing & Strategy Teams.
+
+**Decision Impact:** Accurate demand forecasting equips stakeholders with the necessary foresight to align inventory with expected demand, preventing costly stockouts during peak seasons and minimizing holding costs during low-demand months. It also enables highly targeted promotional campaigns, maximizing revenue and maintaining a competitive edge in the wine industry.
+
+---
+
+## Dataset
+
+**Source:** Provided as part of PGP-DSBA project (ABC Estate Wines).
+
+**Size:** 187 records per dataset, encompassing monthly data from January 1980 to November 1995.
+
+**Key Features:**
+
+* YearMonth: Represents the year and month of the sales data (YYYY-MM format).
+
+* Rose: Monthly sales volume of Rose wine.
+
+* Sparkling: Monthly sales volume of Sparkling wine.
+
+* Data Types: YearMonth (Object/Datetime), Rose (Float64), Sparkling (Int64).
+
+---
+
+## Methodology
+
+The methodology strictly follows a professional data science lifecycle, tailored specifically for Time Series Forecasting:
+
+1. **Understanding the Data**: Inspected the data structure, data types, dimensions, and performed statistical summaries to understand mean variations, ranges, and potential anomalies.
+
+2. **Exploratory Data Analysis (EDA)**: Conducted univariate analysis to map long-term trends and seasonality. Deployed Additive and Multiplicative Decomposition to break the time series down into distinct observed, trend, seasonal, and residual components.
+
+3. **Data Pre Processing**: Handled missing values (mean imputation for the Rose dataset), converted YearMonth into DateTime format, and chronologically split the data into a Training set (1980–1992) and a Test set (1993 onwards).
+
+4. **Model Building - Original Data**: Regressed the data against time using Linear Regression. Implemented Trailing Moving Averages (2, 4, 6, and 9 points) and advanced smoothing techniques including Simple Exponential Smoothing, Double Exponential Smoothing (Holt's Model), and Triple Exponential Smoothing (Holt-Winter's Model).
+
+5. **Checking for Stationary**: Verified series stationarity utilizing rolling means, standard deviations, and the augmented Dickey-Fuller Test.
+
+6. **Model Building - Stationary Data**: Applied autoregressive modeling techniques including ARIMA, Auto ARIMA, and SARIMAX.
+
+7. **Evaluation**: Benchmarked the predictive performance of all models on the test dataset utilizing Root Mean Squared Error (RMSE) to deduce the highest-accuracy solution.
+
+---
+
+## Key Results
+
+**Main Metrics**: Root Mean Squared Error (RMSE) was utilized as the primary evaluation metric.
+
+**Model Performance**: The 2-point Trailing Moving Average emerged as the superior model for both datasets, achieving the lowest RMSE (128.19 for Rose, and 745,291.6 for Sparkling). Triple Exponential Smoothing was the second-best performer, effectively handling seasonality. Linear Regression and Double Exponential Smoothing struggled significantly to capture the complex temporal patterns.
+
+**Key Insights**: * Sparkling wine demonstrated substantially higher overall sales volumes, sharper fluctuations, and a proportionally increasing long-term trend.
+
+    Rose wine exhibited a gradual, steady long-term decline in sales volume.
+
+    Both datasets showcased strong, recurring, and highly periodic seasonal components linked to specific times of the year, likely driven by holidays and celebrations.
+
+---
+
+## Business Impact
+
+* Introduce targeted promotional discounts and bundled product offers during identified high-demand seasonal peaks to aggressively maximize revenue.
+
+* Align strict inventory planning with forecasted seasonal demand to successfully prevent stockouts during peak holiday periods, while minimizing holding/storage costs during off-peak seasons.
+
+* Explore the introduction of new wine variants or complementary products to capitalize on observed consistent growth trends (especially in the Sparkling sector).
+
+* Focus heavily on digital marketing and social media campaigns aimed at younger demographics to proactively reverse the long-term sales decline observed in the Rose wine category.
+
+* Real-world value: This end-to-end forecasting pipeline empowers the business to transition from reactive operations to a highly proactive, data-driven strategy, optimizing the entire supply chain footprint and enhancing the ROI of marketing expenditures.
+
+---
+
+## Skills
+
 **Technical:**
 *   Python (Pandas, NumPy, Scikit-learn, Statsmodels)
 *   Time Series Analysis (ARIMA, Exponential Smoothing)
@@ -70,49 +121,55 @@ This project leverages historical sales data from ABC Estate Wines to predict fu
 *   Strategic Thinking
 *   Business Reporting
 
-## 🔑 Key Learnings
+---
+
+## Key Learnings
+
 *   The importance of decomposing time series to understand underlying components.
 *   Trade-offs between model complexity (ARIMA) and interpretability (Holt-Winters).
 *   Translating technical metrics (RMSE) into business terms (Risk/Accuracy).
 
-## 📂 Repository Structure
-```
-project-name/
-├── data/
-│   ├── raw/          # Original datasets
-│   └── processed/    # Cleaned data
-├── notebooks/        # Jupyter analysis notebooks
-├── src/              # Source code modules
-│   ├── data_preprocessing.py
-│   ├── modeling.py
-│   └── evaluation.py
-├── reports/          # PDF business reports
-├── visuals/          # Generated charts
-├── requirements.txt  # Dependencies
-└── README.md         # Project documentation
-```
+---
 
-## 💻 How to Run
-```bash
-# 1. Clone the repository
-git clone <repo-url>
-cd time-series-wine-sales-forecasting
+## Future Improvements
 
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Explore the notebooks
-jupyter notebook notebooks/rose_wines.ipynb
-```
-
-## 🔮 Future Improvements
 1.  **Deploy as Web App**: Create a Streamlit dashboard for real-time forecasting.
 2.  **Incorporate Exogenous Variables**: Include marketing spend or weather data to improve accuracy.
 3.  **Automate Pipeline**: Set up a CI/CD pipeline for automated monthly re-training.
 4.  **Try Deep Learning**: Experiment with LSTM or Prophet models.
 
-## ✍️ Author
+---
+
+## Repository Structure
+```
+Time_Series_Wine_Sales_Forecasting/
+│
+├── data/
+│   └── wine_sales.csv        # dataset
+│   
+├── notebooks/
+│   └── rose_wines.ipynb        # Main ipynb notebook
+│   └── sparkling_wines.ipynb        # Main ipynb notebook
+│
+├── requirements.txt          # Python dependencies
+├── LICENSE
+└── README.md                 # Project documentation
+```
+
+---
+
+## 👨‍💻 Author
+
 **Nabankur Ray**
-*   **Role**: Data Scientist
-*   [GitHub Profile](https://github.com/nabankur14)
-*   [LinkedIn Profile](https://linkedin.com/in/nabankur14)
+
+Passionate about real-world data-driven solutions
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=flat&logo=github)](https://github.com/nabankur14) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/nabankur-ray-876582181/)
+
+![GitHub Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=nabankur14&show_icons=true)
+
+---
+
+⭐ If you like this project
+
+Give it a ⭐ on GitHub — it helps a lot!
