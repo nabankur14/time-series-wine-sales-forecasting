@@ -115,15 +115,18 @@ The methodology strictly follows a professional data science lifecycle, tailored
 ## Skills
 
 **Technical:**
-*   Python (Pandas, NumPy, Scikit-learn, Statsmodels)
-*   Time Series Analysis (ARIMA, Exponential Smoothing)
-*   Data Visualization (Matplotlib, Seaborn)
-*   Jupyter Notebooks
+*   **Programming & Tools:** Python, Jupyter Notebooks
+*   **Data Manipulation & Analysis:** pandas, numpy, exploratory-data-analysis, trend-analysis
+*   **Machine Learning & Statistics:** scikit-learn, statsmodels
+*   **Forecasting & Modeling:** time-series-forecasting, demand-forecasting, arima, sarimax, exponential-smoothing
+*   **Visualization:** matplotlib, seaborn
+*   **Business Applications:** inventory-optimization
 
 **Soft:**
-*   Data Storytelling
-*   Strategic Thinking
-*   Business Reporting
+*   **Data Storytelling:** Translating complex technical output (e.g., RMSE, Model parameters) into clear, actionable business narratives.
+*   **Cross-Functional Communication:** Bridging the gap between the analytics lifecycle and non-technical stakeholders (Supply Chain Planners, Marketing Teams).
+*   **Strategic Business Acumen:** Aligning predictive modeling metrics with operational goals, minimizing holding costs, and maximizing promotional ROI.
+*   **Analytical Problem Solving:** Evaluating trade-offs between model complexity and interpretability (e.g., ARIMA vs. Holt-Winters) to deduce the highest-accuracy solution.
 
 ---
 
@@ -164,7 +167,7 @@ Time_Series_Wine_Sales_Forecasting/
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Nabankur Ray**
 
