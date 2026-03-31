@@ -33,6 +33,10 @@ env.bak/
 venv.bak/
 
 # Project specific
-data/raw/*.cvs
+data/*.csv
 reports/*.pdf
 !.gitkeep
+
+# macOS specific
+.DS_Store
+*.DS_Store

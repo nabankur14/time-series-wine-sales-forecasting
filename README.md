@@ -1,4 +1,4 @@
-# Time Series Wine Sales Forecasting 🍷📈
+# Time Series Wine Sales Forecasting
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -12,13 +12,16 @@ This project leverages historical sales data from ABC Estate Wines to predict fu
 ---
 
 ## Table of Contents
-- [Project Overview](#-project-overview)
-- [Business Problem](#-business-problem)
-- [Dataset](#-dataset)
-- [Methodology](#-methodology)
-- [Key Results](#-key-results)
-- [Business Impact](#-business-impact)
-- [Repo Structure](#-repository-structure)
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Dataset](#dataset)
+- [Methodology](#methodology)
+- [Key Results](#key-results)
+- [Business Impact](#business-impact)
+- [Skills](#skills)
+- [Key Learnings](#key-learnings)
+- [Future Improvements](#future-improvements)
+- [Repository Structure](#repository-structure)
 - [Author](#-author)
 
 ---
@@ -28,6 +31,7 @@ This project leverages historical sales data from ABC Estate Wines to predict fu
 This project focuses on leveraging data analytics and advanced forecasting techniques to uncover hidden sales patterns, detect seasonal trends, and predict the future demand for distinct wine varieties (Rose and Sparkling). By thoroughly analyzing 20th-century historical sales data, this project develops predictive models that serve as a foundational tool for inventory planning, marketing optimization, and strategic decision-making.
 
 👉 [Open the rose wine notebook to explore full analysis](notebooks/rose_wines.ipynb)
+
 👉 [Open the sparkling wine notebook to explore full analysis](notebooks/sparkling_wines.ipynb)
 
 ---
@@ -141,19 +145,21 @@ The methodology strictly follows a professional data science lifecycle, tailored
 ---
 
 ## Repository Structure
-```
+```text
 Time_Series_Wine_Sales_Forecasting/
 │
 ├── data/
-│   └── wine_sales.csv        # dataset
+│   ├── Rose.csv                  # Rose wine dataset
+│   └── Sparkling.csv             # Sparkling wine dataset
 │   
 ├── notebooks/
-│   └── rose_wines.ipynb        # Main ipynb notebook
-│   └── sparkling_wines.ipynb        # Main ipynb notebook
+│   ├── rose_wines.ipynb          # Rose wine analysis notebook
+│   └── sparkling_wines.ipynb     # Sparkling wine analysis notebook
 │
-├── requirements.txt          # Python dependencies
-├── LICENSE
-└── README.md                 # Project documentation
+├── .gitignore                    # Git ignore rules
+├── requirements.txt              # Python dependencies
+├── LICENSE                       # MIT License
+└── README.md                     # Project documentation
 ```
 
 ---
