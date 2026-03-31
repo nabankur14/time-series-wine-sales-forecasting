@@ -22,7 +22,7 @@ This project leverages historical sales data from ABC Estate Wines to predict fu
 - [Key Learnings](#key-learnings)
 - [Future Improvements](#future-improvements)
 - [Repository Structure](#repository-structure)
-- [Author](#-author)
+- [Author](#author)
 
 ---
 
@@ -114,7 +114,7 @@ The methodology strictly follows a professional data science lifecycle, tailored
 
 ## Skills
 
-**Technical:**
+**Technical Skills:**
 *   **Programming & Tools:** 
     ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![Jupyter Notebooks](https://img.shields.io/badge/Jupyter_Notebooks-F37626?style=flat&logo=jupyter&logoColor=white)
 *   **Data Manipulation & Analysis:** 
@@ -128,7 +128,7 @@ The methodology strictly follows a professional data science lifecycle, tailored
 *   **Business Applications:** 
     ![inventory-optimization](https://img.shields.io/badge/inventory--optimization-8A2BE2?style=flat)
 
-**Soft:**
+**Soft Skills:**
 *   ![Data Storytelling](https://img.shields.io/badge/Data_Storytelling-black?style=flat) Translating complex technical output (e.g., RMSE, Model parameters) into clear, actionable business narratives.
 *   ![Cross-Functional Communication](https://img.shields.io/badge/Cross--Functional_Communication-black?style=flat) Bridging the gap between the analytics lifecycle and non-technical stakeholders (Supply Chain Planners, Marketing Teams).
 *   ![Strategic Business Acumen](https://img.shields.io/badge/Strategic_Business_Acumen-black?style=flat) Aligning predictive modeling metrics with operational goals, minimizing holding costs, and maximizing promotional ROI.
